@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M.A.R.S.paper</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Your styles here */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>Give me your keyword</h3>
+    <input type="text" id="inputText">
+    <button id="getRandomPaperButton" class="btnSmall" >Search</button>
+
+    <br>
+    <!-- Loading indicator: revolving circle or spinner -->
+    <!-- Loading indicator: revolving circle or spinner -->
+    <div class="loader-container">
+        <div id="loadingIndicator" class="loader"></div>
+    </div>
+    <br>
+
+
+    <!-- Elements to display the fetched paper information -->
+    <div id="paperInfo" style="display: none;">
+        <h3>Random Paper:</h3>
+        <p><strong>Title:</strong> <span id="paperTitle"></span></p>
+        <p><strong>Link:</strong> <a id="paperLink" href="#" target="_blank"></a></p>
+      </div>
+      
+
+
+    <button type="button" class="btnSmall" onclick="javascript:window.close()"  style="width: 200px;">Close Window</button>
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Courier New", Courier, monospace;
+    background: linear-gradient(to left bottom, lightgreen, lightblue);
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  
+  #inputText {
+    width: 200px; /* Adjust the percentage value as needed */
+    
+  }
+
+/* CSS styles for the todo items and remove button */
+.todo-item {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.todo-item-text {
+  flex-grow: 1;
+  text-align: left; /* Align the text to the left */
+  word-break: break-all; /* Break words to multiple lines */
+}
+
+.remove-button {
+  margin-left: 10px;
+}
+
+  .fikir {
+    font-size: 30px;
+    font-weight: 600;
+    color : rgb(136, 116, 116);
+  }
+
+  .quote {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  
+  .author {
+    font-size: 25px;
+    margin: 10px;
+    font-style: italic;
+  }
+  
+  .btnLarge {
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none; /* Remove border */
+    color: #ffffff; /* Text color */
+    text-transform: uppercase;
+    width: 200px;
+    transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+  }
+  
+  .btnSmall {
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px;
+    margin-top: 3px;
+    background-color: rgba(43,162,202,255);
+    border: none; /* Remove border */
+    color: #ffffff; /* Text color */
+    text-transform: uppercase;
+    width: 100px;
+    margin-left: 10px;
+    transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+  }
+  
+  .btnLarge:hover,
+  .btnSmall:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Change background color on hover */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+    color: green; /* Change text color on hover */
+  }
+
+  /* Styles for the loading indicator (revolving circle or spinner) */
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 2s linear infinite;
+  display: none; /* Hide the loading indicator initially */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
